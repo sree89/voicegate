@@ -118,8 +118,7 @@ var frameShift = 80;
 </span>
 </a>
 </span>
-
- <a class="navbar-brand" href="index.html">Radius</a>
+ <a class="navbar-brand" href="dashboard.html">Radius</a>
 <!--
 <div class="toolbar-icon-bg hidden-xs" id="toolbar-search">
 <div class="input-group">
@@ -386,19 +385,17 @@ class="badge badge-deeporange">2</span></a>
   <div class="container-fluid">
       
       <!-- calender -->
-      <div class="row">
-      <div class="form-group pull-right">
-							
-							<div class="col-sm-6">
-								<button class="btn btn-default" id="daterangepicker2">
-									<i class="ti ti-calendar"></i> 
-                                    <span>October 12, 2016 - November 10, 2016</span>
-                                    
-                                    <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
-								</button>
-							</div>
-						</div>
-      </div>
+<div class="row">
+    <div class="form-group pull-right">
+        <div class="col-sm-6">
+            <button class="btn btn-default" id="daterangepicker2">
+				<i class="ti ti-calendar"></i> 
+                <span>October 12, 2016 - November 10, 2016</span>
+                <span> <?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
+			</button>
+        </div>
+    </div>
+</div>
       
    <!-- 
     <div class="row">
@@ -412,7 +409,7 @@ class="badge badge-deeporange">2</span></a>
             </div>
           </div>
           
-        </div> <!-- end of cols 
+        </div> <! end of cols 
       
         <div  class="col-lg-4 col-md-12 col-xs-12">
         
@@ -425,7 +422,7 @@ class="badge badge-deeporange">2</span></a>
             </div>
           </div>
           
-        </div> <!-- end of cols 
+        </div> <! end of cols 
         
         <div  class="col-lg-4 col-md-12 col-xs-12">
         
@@ -437,91 +434,79 @@ class="badge badge-deeporange">2</span></a>
             </div>
           </div>
           
-        </div> <!-- end of cols 
+        </div> <! end of cols 
         
-      </div> <!-- end of row 
+      </div> <! end of row 
      
-       <!-- hr line -->
+       <! hr line -->
       
-      <div class="row">
-          
-      <div class="col-lg-4">
-        
-         <div class="info-tile info-tile-alt tile-orange" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);"> 
-          <div class="tile-icon">
-           <i class="ti ti-eye"></i>
-              </div>
-             <div class="tile-heading">
-                 <span style="margin-top:-10px;">BRAND VIEWS</span>
-              </div>
-             <div class="tile-body">
-                 <span>13,532</span>
-                 </div>
-             <div class="tile-footer">
-                    
-                 </div>
-             </div>
+<div class="row">
+    <div class="col-lg-4 main">
+        <div class="info-tile info-tile-alt tile-orange" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon">
+                <i class="ti ti-eye"></i>
             </div>
-          
-          <div class="col-lg-4">
-        
-         <div class="info-tile info-tile1 info-tile-alt tile-success" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);"> 
-          <div class="tile-icon">
-           <i class="ti ti-time"></i>
-              </div>
-             <div class="tile-heading">
-                 <span>SESSIONS</span>
-              </div>
-             <div class="tile-body">
-                 <span>10,475</span>
-                 </div>
-             <div class="tile-footer">
-                 
-                 </div>
-             </div>
+            <div class="tile-heading">
+                <span style="margin-top:-10px;">BRAND VIEWS</span>
             </div>
-          
-          <div class="col-lg-4">
-        
-         <div class="info-tile info-tile-alt tile-green" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);"> 
-          <div class="tile-icon">
-           <i class="ti ti-signal"></i>
-              </div>
-             <div class="tile-heading">
-                 <span>CONNECTIONS</span>
-              </div>
-             <div class="tile-body">
-                 <span>11,864</span>
-                 </div>
-             <div class="tile-footer">
-                
-                 </div>
-             </div>
+            <div class="tile-body">
+                <span>13,532</span>
             </div>
-      </div> <!-- end of .row -->
-      
-     <!-- <div class="page-header"> </div>  *************************************************** -->
-      
-      
-      <div class="row">
-      <div class="col-lg-3 col-md-3 col-xs-12 data">
-          
-       <ul class="list-unstyled end-data hidden-xs">
-           
-           <li class="list-item"><button>Visitor's Data</button></li>
-           <li class="listitem"><button>Age Range</button></li>
-           <li class="list-item"><button>Gender</button></li>
-           <li class="list-item"><button>Operating System</button></li>
-           <li class="list-item"><button>Device</button></li>
-           <li class="list-item"><button>Manufacturer</button></li>
-           <li class="list-item"><button>Browser</button></li>
-           <li class="list-item"><button>Language</button></li>
-           <li class="list-item"><button>Authentication Method</button></li>
+            <div class="tile-footer">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 main">
+        <div class="info-tile info-tile1 info-tile-alt tile-success" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon">
+                <i class="ti ti-time"></i>
+            </div>
+            <div class="tile-heading">
+                <span>SESSIONS</span>
+            </div>
+            <div class="tile-body">
+                <span>10,475</span>
+            </div>
+            <div class="tile-footer">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 main">
+        <div class="info-tile info-tile-alt tile-green" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+            <div class="tile-icon">
+                <i class="ti ti-signal"></i>
+            </div>
+            <div class="tile-heading">
+                <span>CONNECTIONS</span>
+            </div>
+            <div class="tile-body">
+                <span>11,864</span>
+            </div>
+            <div class="tile-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of .row -->
+ <div class="page-header"> </div>  
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-xs-12 data">
+       
+        <ul class="list-unstyled end-data hidden-xs brdrright">
+            <li class="list-item"><button>Visitor's Data</button></li>
+            <li class="listitem"><button>Age Range</button></li>
+            <li class="list-item"><button>Gender</button></li>
+            <li class="list-item"><button>Operating System</button></li>
+            <li class="list-item"><button>Device</button></li>
+            <li class="list-item"><button>Manufacturer</button></li>
+            <li class="list-item"><button>Browser</button></li>
+            <li class="list-item"><button>Language</button></li>
+            <li class="list-item"><button>Authentication Method</button></li>
+        </ul>
             
-        </ul>  
-          <div class="form-group">
-          <form class="col-xs-12 hidden-lg hidden-md" style="text-align:center;">
-                    <select>
+        <div class="form-group">
+            <form class="col-xs-12 hidden-lg hidden-md" style="text-align:center;">
+                <select>
                 <option>-select-</option>
                 <option>Visitor's Data</option>
                 <option>Age Range</option>
@@ -533,41 +518,48 @@ class="badge badge-deeporange">2</span></a>
                 <option>Language</option>
                 <option>Authentication Method</option>
                     </select>
-        </form> 
-              </div> <!-- end of .form-group -->
-          
-          </div> <!-- end of cols -->
-   
-          <div class="col-lg-9 col-md-9 col-xs-12">
-          
-           <div id="chartdiv"></div>    
-          
-          </div> <!-- end of cols -->
-          
-      </div> <!-- end of row -->
-  
-      </div> <!-- end of container-fluid -->
-    
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
-
-
-    <footer role="contentinfo">
-        <div class="clearfix">
-            <ul class="list-unstyled list-inline pull-left">
-                <li>
-                    <h6 style="margin: 0;">&copy; 2016 Laurel Solutions | MADE IN INDIA</h6></li>
-            </ul>
-            <button class="pull-right btn btn-link btn-xs hidden-print" id="back-to-top"><i class="ti ti-arrow-up"></i></button>
+            </form>
         </div>
-    </footer>
-
-</div><!-- end of static-content-wrapper -->
-</div> <!-- end of .static-content-wrapper -->
-</div><!-- end of .layout-static -->
-
-</div> <!-- end of .layout-static -->
-</div><!-- end of .wrapper -->
+        <!-- end of .form-group -->
+    </div>
+    <!-- end of cols -->
+    <div class="col-lg-4 col-md-4 col-xs-12 brdrright">
+       
+        <div id="chartdiv"></div>
+            
+    </div>
+    <!-- end of cols -->
+    <div class="col-lg-4 col-md-4 col-xs-12 brdrright">
+       
+        <div>Legend to be here</div>
+            
+    </div>
+    <!-- end of cols -->
+</div>
+<!-- end of row -->
+</div>
+<!-- end of container-fluid -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<footer role="contentinfo">
+    <div class="clearfix">
+        <ul class="list-unstyled list-inline pull-left">
+            <li>
+                <h6 style="margin: 0;">&copy; 2016 Laurel Solutions | MADE IN INDIA</h6>
+            </li>
+        </ul>
+        <button class="pull-right btn btn-link btn-xs hidden-print" id="back-to-top"><i class="ti ti-arrow-up"></i></button>
+    </div>
+</footer>
+</div>
+<!-- end of static-content-wrapper -->
+</div>
+<!-- end of .static-content-wrapper -->
+</div>
+<!-- end of .layout-static -->
+</div>
+<!-- end of .layout-static -->
+</div>
+<!-- end of .wrapper -->
 
 
 
