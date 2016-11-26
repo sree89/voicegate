@@ -29176,10 +29176,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .end-data li button {
     width: 170px;
     border: 0;
-    background: linear-gradient(90deg,#042F52 10%,#28547B 90%);
+    background: linear-gradient(90deg,#F5711E 10%,#F5891D 60%);
     /*background: linear-gradient(90deg,#00537E 10%,#3AA17E 90%);*/
     border-radius: 14px;
-    box-shadow: 0 5px 0#2B577E;
+    box-shadow: 0 5px 0 #94a5b4;
     color: #fff;
     cursor: pointer;
     font: inherit;
@@ -29203,24 +29203,24 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 } 
 
 .wellgrad {
-   background:radial-gradient(#95C3C1,#3CA6A0);
+   background:#e7e7e7;
    border-radius:20px;
    height:320px;
-   box-shadow:4px 4px 10px #7aaaa7;
+   box-shadow:4px 4px 10px #fec107;
 }
 
 .wellgrad1 {
-   background:radial-gradient(#FF9993,#E94540);
+   background:#e7e7e7,;
    border-radius:20px;
    height:320px;
-   box-shadow:4px 4px 10px #ec726e;
+   box-shadow:4px 4px 10px #8bc24a;
 }
 
 .wellgrad2 {
-   background:radial-gradient(#ABCEEF,#3D96D4);
+   background:#e7e7e7;
    border-radius:20px;
    height:320px;
-   box-shadow:4px 4px 10px #4493cc;
+   box-shadow:4px 4px 10px #00bcd5;
 }
 
 .wellgrad .brdrright{
@@ -29228,17 +29228,17 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 .tile-warning {
-  background: linear-gradient(45deg,#3CA6A0,#95C3C1) !important;
+  background: linear-gradient(22deg,#fec107,#FCB283) !important;
  
 }
 
 .tile-success {
-  background: linear-gradient(45deg,#E94540,#FF9993) !important;
+  background: linear-gradient(#8bc24a,#6DA76D) !important;
   
 }
 
 .tile-info {
-  background: linear-gradient(45deg,#3D96D4,#ABCEEF) !important;
+  background: linear-gradient(#00bcd5,#6ea0a7) !important;
   
 }
 
@@ -29262,15 +29262,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 .bvtile {
-  box-shadow:4px 4px 6px #67bfbb;
+  box-shadow:4px 4px 6px #ffaf00;
 }
 
 .sesstile {
-  box-shadow:4px 4px 6px #f57770;
+  box-shadow:4px 4px 6px #85de3c;
 }
 
 .conntile {
-  box-shadow:4px 4px 6px #69ade8;
+  box-shadow:4px 4px 6px #0bd9f7;
 }
 
 /* amcharts starts here */
@@ -29283,7 +29283,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }	
 
 .inset-text-effect{
-  color:f8bd67;
+  color:#fff;
   font-family:roboto;
   text-shadow: darkgrey 1px 1px 0;
 }
