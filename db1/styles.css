@@ -29282,6 +29282,11 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     margin-top  : -40px;
 }	
 
+#chartlegend {
+  margin-top   : 20px;
+  
+}
+
 .inset-text-effect{
   color:#fff;
   font-family:roboto;

@@ -29276,11 +29276,16 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /* amcharts starts here */
 
 #chartdiv {
-	width		: 100%;
-    height      : 330px;
-	font-size	: 11px;
-    margin-top  : -40px;
+	width 	   : 100%;
+  height     : 330px;
+	font-size	 : 11px;
+  margin-top : -40px;
 }	
+
+#chartlegend {
+  margin-top   : 20px;
+  
+}
 
 .inset-text-effect{
   color:f8bd67;
