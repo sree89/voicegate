@@ -29176,7 +29176,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .end-data li button {
     width: 170px;
     border: 0;
-    background: linear-gradient(90deg,#042F52 10%,#28547B 90%);
+    background: linear-gradient(90deg,#AC4354 10%,#612237 90%);
     /*background: linear-gradient(90deg,#00537E 10%,#3AA17E 90%);*/
     border-radius: 14px;
     box-shadow: 0 5px 0#2B577E;
@@ -29276,15 +29276,16 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /* amcharts starts here */
 
 #chartdiv {
-	width 	   : 100%;
+	width 	   : 110%;
   height     : 330px;
-	font-size	 : 11px;
-  margin-top : -40px;
+  margin-top : -35px;
 }	
 
 #chartlegend {
-  margin-top   : 20px;
-  
+  margin-top   : 35px;
+  border: 2px solid lightgrey;
+  border-radius: 20px;
+    
 }
 
 .inset-text-effect{
