@@ -29224,7 +29224,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 .wellgrad .brdrright{
-  margin-top:-18px;
+  margin-top: -14px;
+  margin-left:6px;
 }
 
 .tile-warning {
@@ -29278,18 +29279,53 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 #chartdiv {
 	width 	   : 110%;
   height     : 330px;
-  margin-top : -35px;
+  margin-top : -30px;
+  margin-left: -40px;
 }	
 
 #chartlegend {
-  margin-top   : 35px;
-  border: 2px solid lightgrey;
-  border-radius: 20px;
-    
+  margin-top   : 40px;
+  margin-left  : -50px;
+ 
 }
 
 .inset-text-effect{
   color:f8bd67;
   font-family:roboto;
   text-shadow: darkgrey 1px 1px 0;
+}
+
+.btns {
+  list-style-type:none;
+}
+
+.btns li {
+  float:left;
+  margin-left:5px;
+}
+
+.btns li button {
+  border-radius:8px !important;
+}
+
+.dummy {
+  height        : 326px;
+  width         : 100%;
+  background    : lightgreen;
+  border-radius : 20px;
+  box-shadow    : 4px 4px 10px green;
+}
+
+#chartseries{
+  height:350px;
+  width:100%
+}
+
+.seriesgraph {
+  border        : 2px solid green;
+  background    : linear-gradient(lightgreen,lightblue); 
+}
+
+#break {
+  margin-top: 10px;
 }
