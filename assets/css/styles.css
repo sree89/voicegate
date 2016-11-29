@@ -29329,6 +29329,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .seriesgraph {
   border        : 2px solid green;
   background    : linear-gradient(lightgreen,lightblue); 
+  border-bottom-right-radius: 60px;
+  border-top-left-radius: 30px;
 }
 
 #break {
