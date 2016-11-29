@@ -17083,6 +17083,7 @@ body.topnav-collapsed header.navbar.navbar-default .navbar-collapse .open .tt-dr
 }
 #topnav.navbar-default {
   background: #ffffff;
+  z-index   : 100;
 }
 #topnav.navbar-default .logo-area .toolbar-trigger a span.icon-bg {
   background-color: #fafafa;
@@ -19987,11 +19988,15 @@ body.error .error-wrapper h1 {
 #topnav.navbar-default .navbar-brand,
 #topnav.navbar-bluegraylight .navbar-brand,
 #topnav.navbar-graylight .navbar-brand {
-  background: url("../../myimages/vg.png") no-repeat left -6px center;
+  background: url("../../myimages/vg.png") no-repeat left 0px center;
+  background-size:70px 25px;
+  z-index: 9999;
   
 }
 #topnav .navbar-brand {
   background: url("../../myimages/vg.png") no-repeat left 0px center;
+  background-size:70px 25px;
+  z-index:9999;
 }
 #topnav .dropdown-menu,
 #topnav .tt-dropdown-menu {
