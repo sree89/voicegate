@@ -29180,6 +29180,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .end-data li button {
     width: 170px;
+    height: 30px;
     border: 0;
     background: linear-gradient(90deg,#AC4354 10%,#612237 90%);
     /*background: linear-gradient(90deg,#00537E 10%,#3AA17E 90%);*/
@@ -29190,7 +29191,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     font: inherit;
     -font-weight: bold;
     font-family:arial;
-    margin: 2px;
+    margin-top: 12px;
     outline: 0;
     padding: 2px;
     transition: all .1s linear;
@@ -29284,8 +29285,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 #chartdiv {
 	width 	   : 100%;
   height     : 500px;
-  /margin-top : -30px;
-  /margin-left: -40px;
+  margin-top : -30px;
+  margin-left: -80px;
 }	
 
 #chartlegend {
@@ -29327,9 +29328,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 .seriesgraph {
-  border        : 2px solid green;
-  background    : linear-gradient(lightgreen,lightblue); 
-  border-bottom-right-radius: 60px;
+  /*border        : 2px solid green;*/
+  /*background    : linear-gradient(lightgreen,lightblue); */
+  border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
 }
 
@@ -29347,9 +29348,23 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background: linear-gradient(lightgrey, white, lightgrey);
 }
 
+.row2 {
+  height : 180px;
+  box-shadow: inset 2px 2px 6px darkgrey;
+  background: linear-gradient(lightgrey, white, lightgrey);
+}
 
+.row3 {
+  height : 400px;
+  box-shadow: inset 2px 2px 6px darkgrey;
+  background: linear-gradient(lightgrey, white, lightgrey);
+}
 
-
+.row4 {
+  height : 500px;
+  box-shadow: inset 2px 2px 6px darkgrey;
+  background: linear-gradient(lightgrey, white, lightgrey);
+}
 
 
 
