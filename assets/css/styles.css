@@ -29282,10 +29282,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /* amcharts starts here */
 
 #chartdiv {
-	width 	   : 110%;
-  height     : 330px;
-  margin-top : -30px;
-  margin-left: -40px;
+	width 	   : 100%;
+  height     : 500px;
+  /margin-top : -30px;
+  /margin-left: -40px;
 }	
 
 #chartlegend {

@@ -567,13 +567,14 @@ class="badge badge-deeporange">2</span></a>
         <div class="well well-lg wellgrad2">
             <div class="row">
                 <div class="col-lg-8">
-                    <div id="chartdiv"></div>
+                    <!--<div id="chartdiv"></div>-->
 
                 </div> <!-- end of inner cols6 -->
-                <div class="col-lg-4">
+                <!--<div class="col-lg-4">
                     <div id="chartlegend"></div>
 
-                </div> <!-- end of inner cols6 -->
+                </div> -->
+                <!-- end of inner cols6 -->
 
             </div> <!-- end of inner row -->
         </div> <!-- end of .well-lg -->
@@ -591,6 +592,9 @@ class="badge badge-deeporange">2</span></a>
 
 </div>
 <!-- end of row -->
+                    <div id="chartdiv"></div>
+
+
 </div>
 <!-- end of container-fluid -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -714,11 +718,9 @@ class="badge badge-deeporange">2</span></a>
 var chart = AmCharts.makeChart( "chartdiv", {
   "type": "pie",
   "theme": "light",
-  "startDuration":0,
-  "labelsEnabled": false,
   "dataProvider": [ {
-  "country": "Lithuania",
-  "value": 260
+    "country": "Lithuania",
+    "value": 260
   }, {
     "country": "Ireland",
     "value": 201
@@ -737,8 +739,10 @@ var chart = AmCharts.makeChart( "chartdiv", {
   } ],
   "valueField": "value",
   "titleField": "country",
+  
   "outlineAlpha": 0.4,
-  "depth3D": 20,
+  "startDuration":0,
+  "depth3D": 15,
   "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
   "angle": 30,
   "export": {
@@ -747,42 +751,42 @@ var chart = AmCharts.makeChart( "chartdiv", {
 } );
 
 
-var legend = AmCharts.makeChart("chartlegend", {
+// var legend = AmCharts.makeChart("chartlegend", {
     
-     "type": "pie",
-    "theme": "light",
-    "startDuration":0,
-    "innerRadius": "50%",
-    "gradientRatio": [-0.4, -0.4, -0.4, -0.4, -0.4, -0.4, 0, 0.1, 0.2, 0.1, 0, -0.2, -0.5],
-    "dataProvider": [{
-        "country": "Lithuania",
-        "litres": 501.9
-    }, {
-        "country": "Czech Republic",
-        "litres": 301.9
-    }, {
-        "country": "Ireland",
-        "litres": 201.1
-    },{
-        "country": "Germany",
-        "litres": 165.8
-    }, {
-        "country": "Australia",
-        "litres": 139.9
-    }, {
-        "country": "Austria",
-        "litres": 128.3
-    } ],
+//      "type": "pie",
+//     "theme": "light",
+//     "startDuration":0,
+//     "innerRadius": "50%",
+//     "gradientRatio": [-0.4, -0.4, -0.4, -0.4, -0.4, -0.4, 0, 0.1, 0.2, 0.1, 0, -0.2, -0.5],
+//     "dataProvider": [{
+//         "country": "Lithuania",
+//         "litres": 501.9
+//     }, {
+//         "country": "Czech Republic",
+//         "litres": 301.9
+//     }, {
+//         "country": "Ireland",
+//         "litres": 201.1
+//     },{
+//         "country": "Germany",
+//         "litres": 165.8
+//     }, {
+//         "country": "Australia",
+//         "litres": 139.9
+//     }, {
+//         "country": "Austria",
+//         "litres": 128.3
+//     } ],
     
 
 
-    "legend":{
-   	"position":"right",
-    "marginRight":100,
-    "autoMargins":false
-  }
+//     "legend":{
+//    	"position":"right",
+//     "marginRight":100,
+//     "autoMargins":false
+//   }
   
-});
+// });
 
 // pie chart ends
 
