@@ -29336,3 +29336,30 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 #break {
   margin-top: 10px;
 }
+
+.mtop {
+  margin-top:-15px;
+}
+
+.back {
+  height: 35px !important;
+  box-shadow: inset 2px 2px 6px darkgrey;
+  background: linear-gradient(lightgrey, white, lightgrey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

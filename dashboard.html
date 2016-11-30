@@ -369,29 +369,42 @@ class="badge badge-deeporange">2</span></a>
       <!-- calender -->
 <div class="row">
 
-<div class="col-lg-6 col-md-6 col-xs-12">
-    
-    <ul class="btns">
-<li> <button type="button" class="btn btn-default"> TODAY </button> </li>
-<li> <button type="button" class="btn btn-default"> THIS WEEK </button> </li>
-<li> <button type="button" class="btn btn-default"> THIS MONTH </button> </li>
-<li> <button type="button" class="btn btn-default"> LAST WEEK </button> </li>
-<li> <button type="button" class="btn btn-default"> LAST MONTH </button> </li>
-        </ul>
-    
-</div> <!-- end of col-lg-6 -->
+<div class="well well-lg back">
 
-<div class="col-lg-6 col-md-12 col-xs-12"> 
-    <div class="form-group pull-right">
-        <div class="col-sm-6">
-            <button class="btn btn-default" id="daterangepicker2">
-				<i class="ti ti-calendar"></i> 
-                <span>October 12, 2016 - November 10, 2016</span>
-                <span> <?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
-			</button>
-        </div>
-    </div>
+  <div class="col-lg-6 col-md-6 col-xs-12 mtop">
+     
+    <ul class="btn-group btns">
+        <li> <button class="btn btn-success"> TODAY </button> </li>
+        <li> <button class="btn btn-success"> THIS WEEK </button> </li>
+        <li> <button class="btn btn-success"> LAST WEEK </button> </li>
+        <li> <button class="btn btn-success"> THIS MONTH </button> </li>
+        <li> <button class="btn btn-success"> LAST MONTH </button> </li>
+    </ul>
+   
+</div> <!-- end of col-lg-6 -->  
+
+<div class="col-lg-6 col-md-12 col-xs-12 mtop"> 
+    
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-8">
+                    <button class="btn btn-default" id="daterangepicker2">
+                        <i class="ti ti-calendar"></i> 
+                        <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?>
+                        <span> NOVEMBER 1, 2016 - NOVEMBER 30, 2016 </span>
+                        </span> <b class="caret"></b>
+                    </button>
+                </div>
+            </div>
+
     </div> <!-- end of col-lg-6 -->
+    
+     </div>
+
+
+
+
+ 
 </div> <!-- end of row -->
       
    <!-- 
@@ -502,8 +515,8 @@ class="badge badge-deeporange">2</span></a>
     
  <div class="col-lg-4 col-md-4 col-xs-12"> 
      
- <div class="well well-lg wellgrad"> 
-        <ul class="list-unstyled end-data hidden-xs brdrright">
+ <div class="well well-lg wellgrad hidden-xs"> 
+        <ul class="list-unstyled end-data brdrright">
             <li class="list-item"><button>Visitor's Data</button></li>
             <li class="listitem"><button>Age Range</button></li>
             <li class="list-item"><button>Gender</button></li>
@@ -516,24 +529,39 @@ class="badge badge-deeporange">2</span></a>
         </ul>
  </div>
 
-<div class="form-group">
-            <form class="col-xs-12 hidden-lg hidden-md" style="text-align:center;">
-                <select>
-                <option>-select-</option>
-                <option>Visitor's Data</option>
-                <option>Age Range</option>
-                <option>Gender</option>
-                <option>Operating System</option>
-                <option>Device</option>
-                <option>Manufacturer</option>
-                <option>Browser</option>
-                <option>Language</option>
-                <option>Authentication Method</option>
-                    </select>
-            </form>
+         <div class="btn-group hidden-lg hidden-md"> <a class="btn btn-default dropdown-toggle btn-select2 col-xs-12" data-toggle="dropdown" href="#"> Select <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">California</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Massachusetts</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Quebec</a>
+                </li><li><a href="#">Ontario</a>
+                </li><li><a href="#">British Columbia</a>
+                </li>
+            </ul>
         </div>
-        <!-- end of .form-group -->
-</div> <!-- end of col-lg-3 -->
+
+<!--
+<select class="dropdown hidden-lg hidden-md">
+    <button class="btn btn-default dropdown-toggle col-xs-12" type="button" id="menu1" data-toggle="dropdown">-Select-
+        <span class="caret"> </span>
+         </button>
+            <ul class="dropdown-menu col-xs-12" role="menu" aria-labelledby="menu1" style="text-align:center;">
+                <option role="listitems">-Select-</option>
+                <option role="listitems">Visitor's Data</option>
+                <option role="listitems">Age Range</option>
+                <option role="listitems">Gender</option>
+                <option role="listitems">Operating System</option>
+                <option role="listitems">Device</option>
+                <option role="listitems">Manufacturer</option>
+                <option role="listitems">Browser</option>
+                <option role="listitems">Language</option>
+                <option role="listitems">Authentication Method</option>
+          </ul>
+</select> <! end of .form-group -->
+        
+</div> <!-- end of col-lg-4 -->
 
 <div class="col-lg-8 col-md-8 col-xs-12">
         <div class="well well-lg wellgrad2">
@@ -555,7 +583,7 @@ class="badge badge-deeporange">2</span></a>
 
 </div> <!-- end of col-lg-9 -->
 
-<div class="col-lg-3">
+<div class="col-lg-3 hidden-xs">
 
 <div class="dummy"> </div>
 
@@ -592,8 +620,8 @@ class="badge badge-deeporange">2</span></a>
 
 
 <!-- Switcher 
-<div class="demo-options">
-<div class="demo-options-icon"><i class="ti ti-paint-bucket"></i></div>
+<div class="demo-lis">
+<div class="demo-lis-icon"><i class="ti ti-paint-bucket"></i></div>
 <div class="demo-heading">Demo Settings</div>
 
 <div class="demo-body">
@@ -614,7 +642,7 @@ class="badge badge-deeporange">2</span></a>
 </div>
 
 <div class="demo-body">
-<div class="option-title">Topnav</div>
+<div class="li-title">Topnav</div>
 <ul id="demo-header-color" class="demo-color-list">
 <li><span class="demo-cyan"></span></li>
 <li><span class="demo-light-blue"></span></li>
@@ -644,7 +672,7 @@ class="badge badge-deeporange">2</span></a>
 </div>
 
 <div class="demo-body">
-<div class="option-title">Sidebar</div>
+<div class="li-title">Sidebar</div>
 <ul id="demo-sidebar-color" class="demo-color-list">
 <li><span class="demo-cyan"></span></li>
 <li><span class="demo-light-blue"></span></li>
@@ -1347,9 +1375,12 @@ Flot Curved Lines -->
 <script type="text/javascript" src="assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- jVectorMap -->
 
-<!--<script type="text/javascript" src="assets/plugins/switchery/switchery.js"></script>     					              <!-- Switchery -->
+<!--<script type="text/javascript" src="assets/plugins/switchery/switchery.js"></script>     					              <! Switchery -->
 
 <script type="text/javascript" src="assets/plugins/easypiechart/jquery.easypiechart.js"></script>
+
+<script type="text/javascript" src="assets/plugins/form-daterangepicker/moment.min.js"></script>              			
+<!-- Moment.js for Date Range Picker -->
 <script type="text/javascript" src="assets/plugins/fullcalendar/moment.min.js"></script>
 <!-- Moment.js Dependency -->
 <script type="text/javascript" src="assets/plugins/fullcalendar/fullcalendar.min.js"></script>
