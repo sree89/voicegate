@@ -127,7 +127,7 @@
 
 <div class="row clearfix">
 <div class="well well-lg back">
-<div class="col-lg-6 col-md-6 col-xs-12 mtop pull-left">
+<div class="col-lg-6 col-md-6 col-xs-12 mtop">
 
     <ul class="btn-group btns">
         <li> <button class="btn btn-success"> TODAY </button> </li>
@@ -140,16 +140,20 @@
 </div>
 <!-- end of .mtop -->
 
-<div class="col-lg-6 col-md-6 col-xs-12 mtop">
+<div class="col-lg-6 col-md-6 col-xs-12 mtop1">
 
-   <div class="form-group pull-right">
+   <div class="form-group">
      
-        <button class="btn btn-default" id="daterangepicker2">
-            <i class="ti ti-calendar"></i> 
-            <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?>
-            <span> NOVEMBER 1, 2016 - NOVEMBER 30, 2016 </span>
-            </span> <b class="caret"></b>
-        </button>
+        <form action="" class="form-horizontal row-border">
+            <div class="form-group">
+                <div class="col-sm-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="ti ti-calendar"></i></span>
+                        <input type="text" class="form-control" id="daterangepicker1">
+                    </div>
+                </div>
+            </div>
+            </form>
     
 </div>
 <!-- end of .form-group -->
@@ -163,62 +167,51 @@
 </div>
 <!-- end of 1st row -->
 
-<div class="row upper">
+<!-- *^*^*^*^*^*^*^*^*^**^*^*^*^*^* row2 starts here *^*^*^*^*^*^*^*^*^**^*^*^*^*^* -->
+        
+<div class="row">
 <div class="well well-lg row2">
- <div class="col-lg-4 main">
-        <div class="info-tile info-tile-alt tile-warning bvtile" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
-            <div class="tile-icon">
-                <i class="ti ti-eye" style="color:yellow";></i>
-            </div>
-            <div class="tile-heading">
-                <span class="inset-text-effect">BRAND VIEWS</span>
-            </div>
-            <div class="tile-body">
-                <span class="inset-text-effect">13,532</span>
-            </div>
-        </div>
-        <!-- end of .bvtile -->
-    </div>
-    <!-- end of cols-4 / .main -->
-
-<div class="col-lg-4 main">
-    <div class="info-tile info-tile1 info-tile-alt tile-success sesstile" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
-        <div class="tile-icon">
-            <i class="ti ti-time" style="color:yellow;"></i>
-        </div>
-        <div class="tile-heading">
-            <span class="inset-text-effect">SESSIONS</span>
-        </div>
-        <div class="tile-body">
-            <span class="inset-text-effect">10,475</span>
-        </div>
-    </div>
-    <!-- end of info-tile -->
-</div>
-<!-- end of cols4 / .main -->
-
-  <div class="col-lg-4 main">
-    <div class="info-tile info-tile-alt tile-info conntile" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
-        <div class="tile-icon">
-            <i class="ti ti-signal" style="color:yellow;"></i>
-        </div>
-        <div class="tile-heading">
-            <span class="inset-text-effect">CONNECTIONS</span>
-        </div>
-        <div class="tile-body">
-            <span class="inset-text-effect">11,864</span>
-        </div>
-        <div class="tile-footer">
-        </div>
-    </div>
-    <!-- end of info-tile -->
-</div>
-<!-- end of cols4 / .main -->
-</div>
-<!-- end of .well -->
-</div>
-<!-- end of 2nd row / .upper -->     
-
+  
+    <div class="col-md-4">
+			<div class="info-tile tile-warning bvtile">
+				<div class="tile-icon">
+                    <i class="ti ti-eye" style="color:yellow;"></i></div>
+				<div class="tile-heading">
+                    <span class="inset-text-effect">BRAND VIEWS</span></div>
+				<div class="tile-body">
+                    <span class="inset-text-effect">13,532</span></div>
+				
+			</div>
+		</div>
+    
+        <div class="col-md-4">
+			<div class="info-tile tile-success sesstile">
+				<div class="tile-icon">
+                    <i class="ti ti-time" style="color:yellow;"></i></div>
+				<div class="tile-heading">
+                    <span class="inset-text-effect">SESSIONS</span></div>
+				<div class="tile-body">
+                    <span class="inset-text-effect">10,475</span></div>
+				
+			</div>
+		</div>
+    
+      <div class="col-md-4">
+			<div class="info-tile tile-info conntile">
+				<div class="tile-icon">
+                    <i class="ti ti-signal" style="color:yellow;"></i></div>
+				<div class="tile-heading">
+                    <span class="inset-text-effect">CONNECTIONS</span></div>
+				<div class="tile-body">
+                    <span class="inset-text-effect">11,864</span></div>
+				
+			</div>
+		</div>
+    
+    
+        </div> <!-- end of well -->
+        </div>        
+        <!-- end of row2 -->
 <!-- *^*^*^*^*^*^*^*^*^**^*^*^*^*^* chart graph starts here *^*^*^*^*^*^*^*^*^**^*^*^*^*^* -->
 
 <div class="row">
@@ -234,11 +227,11 @@
 
 <div class="row" id="break">
 <div class="well well-lg row4"> 
-<div class="col-lg-3 col-md-3 col-xs-12"> 
+<div class="col-lg-3 col-md-3 col-xs-12 hidden-xs"> 
 
         <ul class="list-unstyled end-data brdrright">
             <li class="list-item"><button>Visitor's Data</button></li>
-            <li class="listitem"><button>Age Range</button></li>
+            <li class="list-item"><button>Age Range</button></li>
             <li class="list-item"><button>Gender</button></li>
             <li class="list-item"><button>Operating System</button></li>
             <li class="list-item"><button>Device</button></li>
@@ -249,6 +242,29 @@
         </ul>
 </div>
 <!-- end of cols3 -->
+
+<div class="col-xs-12 hidden-lg hidden-md"> 
+
+<form class="form-inline">
+    <div class="form-group">
+        <select class="form-control">
+            <option value="" selected="selected">Select an Option</option>
+            <option value="vd">Visitor's Data</option>
+            <option value="age">Age</option>
+            <option value="gen">Gender</option>
+            <option value="os">Operating System</option>
+            <option value="dev">Device</option>
+            <option value="mfr">Manufacturer</option>
+            <option value="brow">Browser</option>
+            <option value="lang">Language</option>
+            <option value="auth">Authentication Method</option>
+            
+        </select>
+    </div>
+    </form>
+
+
+</div>
 
 <div class="col-lg-9 col-md-9 col-xs-12">
 
@@ -261,19 +277,7 @@
 </div>
 <!-- end of 4th row -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-     
+  
     </div>
     <!-- end of container-fluid -->
 
@@ -305,11 +309,18 @@ var chart = AmCharts.makeChart( "chartdiv", {
   "type": "pie",
   "theme": "light",
   "labelsEnabled":false,
+  "responsive": {
+    "enabled": false
+  },
     "legend":{
    	"position":"right",
+    "top":30,
     "marginRight":100,
-    "autoMargins":false
-  },
+    "autoMargins":false,
+    "fontSize":11,
+    "marginLeft":20,
+    "markerSize":8,
+      },
   "dataProvider": [ {
     "country": "Lithuania",
     "value": 260
@@ -352,6 +363,9 @@ var chart = AmCharts.makeChart("chartseries", {
     "autoMarginOffset": 20,
     "mouseWheelZoomEnabled":true,
     "dataDateFormat": "YYYY-MM-DD",
+    "responsive": {
+    "enabled": true
+  },
     "valueAxes": [{
         "id": "v1",
         "axisAlpha": 0,
@@ -771,6 +785,8 @@ function zoomChart() {
 
 
 </script>
+
+<!--<script src="amcharts/plugins/responsive/responsive.min.js" type="text/javascript"></script>-->
 
 <script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
 <!-- Load jQuery -->
